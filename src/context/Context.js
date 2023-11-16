@@ -83,8 +83,8 @@ export const Provider = (props) => {
     getRestaurants,
   };
   return (
-    <GlobalContext.Provider value={{ state, handleFunction }}>
+    <Context.Provider value={{ state, handleFunction }}>
       {props.children}
-    </GlobalContext.Provider>
+    </Context.Provider>
   );
 };
